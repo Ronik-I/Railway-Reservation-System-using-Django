@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Index</title>
+
+    <!-- Latest compiled and minified CSS -->
+    {% load static %}
+    <script
+      type="text/javascript"
+      src="{%static 'js/bootstrap.min.js'%}"
+    ></script>
+    <script
+      type="text/javascript"
+      src="{%static 'js/jquery-3.3.1.min.js'%}"
+    ></script>
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        opacity: 0;
+        transition: opacity 2s;
+        background-image: url('{% static "images/mainback2.jpg"%}');
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+      .sty {
+        font-family: "Dancing Script", cursive;
+        color: white;
+      }
+      .row1 {
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+      .col-lg-4 {
+        width: 50%;
+      }
+      .col-lg-1 {
+        float: right;
+      }
+      #blk {
+        height: 150px;
+        width: 150px;
+        box-shadow: 1px 2px 2px #000000;
+        font-size: 20px;
+        white-space: normal;
+        word-wrap: break-word;
+        margin-left: 10px;
+      }
+      .row {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+
+      #blk:hover {
+        background-color: blue;
+        color: white;
+        box-shadow: 5px 5px 5px #000000;
+        height: 160px;
+        width: 160px;
+      }
+    </style>
+  </head>
+  <body onload="document.body.style.opacity='1'; typeWriter()" ;>
+    {% block body %} {% endblock %}
+  </body>
+</html>
