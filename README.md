@@ -7,8 +7,8 @@ It is a Simple Railway Reservation System that allows User to Search Trains,Book
 It also has Admin side which allows extra features like Add Routes,Stations,Trains.
 
 Login Credentials
-Admin Side :    Uid-'tushar'       Pass-'pass1234' 
+Admin Side :    Uid-'addmin'       Pass-'adminlogin' 
 
-Normal User:    Uid:'pritam'       Pass-'pritam123'
+Normal User:    Uid:'ronik'       Pass-'roniks'
  
 Use Port 8500
